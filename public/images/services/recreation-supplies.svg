@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EEF3F8" />
+      <stop offset="60%" stop-color="#E3EAF2" />
+      <stop offset="100%" stop-color="#D7E2EE" />
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#E8EFF6" />
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E3A5F" />
+      <stop offset="100%" stop-color="#14233B" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17B5A7" />
+      <stop offset="100%" stop-color="#0A7A70" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F9C968" />
+      <stop offset="100%" stop-color="#E0A030" />
+    </linearGradient>
+    <linearGradient id="woodGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D9A773" />
+      <stop offset="100%" stop-color="#B07A48" />
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#14233B" flood-opacity="0.16" />
+    </filter>
+    <filter id="smShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#14233B" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <!-- Studio backdrop -->
+  <rect width="1280" height="720" fill="url(#bgGrad)" />
+  <polygon points="0,430 1280,380 1280,720 0,720" fill="url(#tableGrad)" />
+  <line x1="0" y1="430" x2="1280" y2="380" stroke="#CBD5E1" stroke-width="2" />
+
+  <!-- Subtle architectural background accent -->
+  <rect x="860" y="60" width="320" height="240" rx="18" fill="#FFFFFF" opacity="0.55" />
+  <rect x="884" y="84" width="120" height="192" rx="10" fill="#0F9D91" opacity="0.14" />
+  <rect x="1020" y="84" width="136" height="90" rx="10" fill="#14233B" opacity="0.10" />
+  <rect x="1020" y="186" width="136" height="90" rx="10" fill="#F4B544" opacity="0.18" />
+
+  <!-- Wooden Chess / Strategy Board (Left) -->
+  <g filter="url(#softShadow)" transform="translate(150, 390) skewX(-18)">
+    <rect x="0" y="0" width="340" height="200" rx="10" fill="#3B2A1E" />
+    <rect x="14" y="14" width="312" height="172" rx="4" fill="#F1E5D1" />
+    <!-- 6x4 clean stylized squares -->
+    <g fill="#1E3A5F">
+      <rect x="14" y="14" width="52" height="43" />
+      <rect x="118" y="14" width="52" height="43" />
+      <rect x="222" y="14" width="52" height="43" />
+      <rect x="66" y="57" width="52" height="43" />
+      <rect x="170" y="57" width="52" height="43" />
+      <rect x="274" y="57" width="52" height="43" />
+      <rect x="14" y="100" width="52" height="43" />
+      <rect x="118" y="100" width="52" height="43" />
+      <rect x="222" y="100" width="52" height="43" />
+      <rect x="66" y="143" width="52" height="43" />
+      <rect x="170" y="143" width="52" height="43" />
+      <rect x="274" y="143" width="52" height="43" />
+    </g>
+    <rect x="0" y="200" width="340" height="16" rx="4" fill="#2A1D14" />
+  </g>
+
+  <!-- Stylized Chess Pieces on Board -->
+  <g filter="url(#smShadow)">
+    <ellipse cx="265" cy="485" rx="20" ry="8" fill="#14233B" />
+    <path d="M251,483 L257,438 L273,438 L279,483 Z" fill="url(#navyGrad)" />
+    <circle cx="265" cy="430" r="12" fill="url(#navyGrad)" />
+
+    <ellipse cx="360" cy="442" rx="18" ry="7" fill="#0A7A70" />
+    <path d="M348,440 L354,402 L366,402 L372,440 Z" fill="url(#tealGrad)" />
+    <circle cx="360" cy="396" r="10" fill="url(#tealGrad)" />
+
+    <ellipse cx="320" cy="536" rx="18" ry="7" fill="#CBD5E1" />
+    <path d="M308,534 L314,496 L326,496 L332,534 Z" fill="#FFFFFF" />
+    <circle cx="320" cy="490" r="10" fill="#FFFFFF" />
+  </g>
+
+  <!-- Table Tennis Paddles & Ping Pong Balls (Center) -->
+  <g filter="url(#softShadow)">
+    <!-- Teal Paddle -->
+    <g transform="translate(650, 385) rotate(-24)">
+      <rect x="-14" y="88" width="28" height="96" rx="12" fill="url(#woodGrad)" />
+      <ellipse cx="0" cy="0" rx="84" ry="96" fill="url(#woodGrad)" />
+      <ellipse cx="0" cy="-2" rx="76" ry="88" fill="url(#tealGrad)" />
+      <path d="M-74,40 A80,88 0 0,0 74,40" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.25" />
+    </g>
+    <!-- Navy Paddle -->
+    <g transform="translate(745, 420) rotate(26)">
+      <rect x="-14" y="88" width="28" height="96" rx="12" fill="url(#woodGrad)" />
+      <ellipse cx="0" cy="0" rx="84" ry="96" fill="url(#woodGrad)" />
+      <ellipse cx="0" cy="-2" rx="76" ry="88" fill="url(#navyGrad)" />
+      <path d="M-74,40 A80,88 0 0,0 74,40" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.2" />
+    </g>
+    <!-- Ping pong balls -->
+    <circle cx="575" cy="542" r="24" fill="#FFFFFF" filter="url(#smShadow)" />
+    <circle cx="569" cy="534" r="7" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="628" cy="566" r="24" fill="url(#goldGrad)" filter="url(#smShadow)" />
+    <circle cx="622" cy="558" r="6" fill="#FFF3D6" opacity="0.8" />
+  </g>
+
+  <!-- Team Engagement Gift / Activity Kit & Trophy (Right) -->
+  <g filter="url(#softShadow)">
+    <!-- Gift / Team Kit Box -->
+    <rect x="895" y="388" width="210" height="160" rx="12" fill="url(#navyGrad)" />
+    <rect x="885" y="362" width="230" height="36" rx="8" fill="#24426B" />
+    <rect x="984" y="362" width="32" height="186" fill="url(#tealGrad)" />
+    <rect x="895" y="452" width="210" height="24" fill="url(#tealGrad)" />
+    <!-- Ribbon loop -->
+    <path d="M1000,362 C970,326 942,340 960,362 Z" fill="url(#tealGrad)" />
+    <path d="M1000,362 C1030,326 1058,340 1040,362 Z" fill="#17B5A7" />
+
+    <!-- Corporate Trophy Cup -->
+    <g transform="translate(1070, 290)">
+      <rect x="-36" y="198" width="72" height="22" rx="5" fill="#14233B" />
+      <rect x="-24" y="182" width="48" height="18" rx="3" fill="#24426B" />
+      <rect x="-8" y="138" width="16" height="46" fill="url(#goldGrad)" />
+      <path d="M-46,42 L46,42 L34,116 C28,136 14,144 0,144 C-14,144 -28,136 -34,116 Z" fill="url(#goldGrad)" />
+      <path d="M-46,56 C-72,56 -72,102 -36,104" fill="none" stroke="#E0A030" stroke-width="9" stroke-linecap="round" />
+      <path d="M46,56 C72,56 72,102 36,104" fill="none" stroke="#E0A030" stroke-width="9" stroke-linecap="round" />
+      <ellipse cx="0" cy="42" rx="46" ry="10" fill="#FDE09B" />
+    </g>
+  </g>
+</svg>

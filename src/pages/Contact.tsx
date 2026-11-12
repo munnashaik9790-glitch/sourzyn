@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Mail, Phone, MapPin, Clock } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
 import SEO from '../components/SEO'
+import { siteConfig } from '../data/site-config'
 
 interface ContactFormData {
   name: string
@@ -138,7 +139,7 @@ export default function Contact() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+91 77951 44694"
+                      placeholder="7842371473"
                     />
                   </div>
 
@@ -242,7 +243,7 @@ export default function Contact() {
                         href="tel:+91XXXXXXXXXX"
                         style={{ color: 'var(--color-text-muted)', fontSize: '0.9375rem' }}
                       >
-                        +91 77951 44694
+                        7842371473
                       </a>
                     </div>
                   </li>
@@ -266,7 +267,7 @@ export default function Contact() {
                     <div>
                       <h4 style={{ marginBottom: '0.25rem' }}>Address</h4>
                       <p style={{ color: 'var(--color-text-muted)', fontSize: '0.9375rem', marginBottom: 0 }}>
-                        Configurable - Add your business address here
+                        {siteConfig.contact.address}
                       </p>
                     </div>
                   </li>

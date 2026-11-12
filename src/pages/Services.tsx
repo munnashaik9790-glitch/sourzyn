@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
 import PageHeader from '../components/PageHeader'
+import ServiceCard from '../components/ServiceCard'
 import { services } from '../data/services'
 
 export default function Services() {
@@ -22,38 +22,7 @@ export default function Services() {
 
           <div className="grid grid-3">
             {services.map((service) => (
-              <Link
-                key={service.id}
-                to={`/services/${service.slug}`}
-                className="card"
-                style={{ textDecoration: 'none' }}
-              >
-                <div
-                  style={{
-                    width: '56px',
-                    height: '56px',
-                    borderRadius: 'var(--radius-md)',
-                    backgroundColor: 'var(--color-secondary)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    marginBottom: '1.5rem',
-                    color: 'white'
-                  }}
-                >
-                  <ArrowRight size={28} />
-                </div>
-                <h3 style={{ marginBottom: '0.75rem' }}>{service.title}</h3>
-                <p style={{ fontSize: '0.875rem', marginBottom: '1rem' }}>{service.description}</p>
-                <div style={{ marginBottom: '1rem' }}>
-                  <span style={{ fontSize: '0.75rem', color: 'var(--color-text-light)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-                    {service.products.length} Products
-                  </span>
-                </div>
-                <span style={{ color: 'var(--color-secondary)', fontSize: '0.875rem', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  Explore category <ArrowRight size={16} />
-                </span>
-              </Link>
+              <ServiceCard key={service.id} service={service} showProductCount />
             ))}
           </div>
         </div>

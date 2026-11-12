@@ -235,7 +235,7 @@ export default function GetAQuote() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
-                        placeholder="+91 77951 44694"
+                        placeholder="7842371473"
                       />
                       {errors.phone && <p className="error">{errors.phone}</p>}
                     </div>
