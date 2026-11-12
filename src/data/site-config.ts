@@ -5,8 +5,8 @@ export const siteConfig = {
   domain: 'sourzyn.com',
   contact: {
     email: 'sales@sourzyn.com',
-    phone: '+91 77951 44694',
-    address: 'Configurable - Add your business address here',
+    phone: '7842371473',
+    address: "20th 'B, 93, 13th Cross Rd, Old Madiwala, Madiwala, Venkateshwara Layout, BTM 1st Stage, Bengaluru, Karnataka 560068",
     hours: 'Mon - Sat: 9:00 AM - 6:00 PM'
   },
   social: {

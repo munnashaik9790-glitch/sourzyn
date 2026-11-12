@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle, Package, Truck, Shield, Users } from 'lucide-r
 import { services } from '../data/services'
 import { industries } from '../data/industries'
 import { faqs } from '../data/faqs'
+import ServiceCard from '../components/ServiceCard'
 
 export default function Home() {
   return (
@@ -59,19 +60,22 @@ export default function Home() {
               style={{
                 backgroundColor: 'var(--color-primary-light)',
                 borderRadius: 'var(--radius-xl)',
-                padding: '3rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: '400px'
+                overflow: 'hidden',
+                boxShadow: 'var(--shadow-xl)',
+                border: '1px solid rgba(255, 255, 255, 0.12)',
+                aspectRatio: '4 / 3'
               }}
             >
-              <div style={{ textAlign: 'center', color: 'rgba(255, 255, 255, 0.6)' }}>
-                <Package size={120} />
-                <p style={{ marginTop: '1rem', color: 'rgba(255, 255, 255, 0.8)' }}>
-                  Professional Business Supplies
-                </p>
-              </div>
+              <img
+                src="/images/hero-banner.jpg"
+                alt="Sourzyn professional workplace and business supplies"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  display: 'block'
+                }}
+              />
             </div>
           </div>
         </div>
@@ -164,34 +168,7 @@ export default function Home() {
 
           <div className="grid grid-3">
             {services.slice(0, 6).map((service) => (
-              <Link
-                key={service.id}
-                to={`/services/${service.slug}`}
-                className="card"
-                style={{ textDecoration: 'none' }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                  <div
-                    style={{
-                      width: '48px',
-                      height: '48px',
-                      borderRadius: 'var(--radius-md)',
-                      backgroundColor: 'var(--color-secondary)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: 'white'
-                    }}
-                  >
-                    <Package size={24} />
-                  </div>
-                  <h3 style={{ fontSize: '1.125rem', marginBottom: 0 }}>{service.title}</h3>
-                </div>
-                <p style={{ fontSize: '0.875rem', marginBottom: '1rem' }}>{service.description}</p>
-                <span style={{ color: 'var(--color-secondary)', fontSize: '0.875rem', fontWeight: 500 }}>
-                  Learn more →
-                </span>
-              </Link>
+              <ServiceCard key={service.id} service={service} ctaLabel="Learn more" />
             ))}
           </div>
 

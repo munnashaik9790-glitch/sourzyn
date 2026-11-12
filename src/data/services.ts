@@ -4,6 +4,7 @@ export interface Service {
   title: string
   description: string
   icon: string
+  image: string
   products: string[]
   benefits: string[]
   relatedServices: string[]
@@ -16,6 +17,7 @@ export const services: Service[] = [
     title: 'Office Essentials',
     description: 'Complete stationery and office supplies for daily business operations',
     icon: 'PenTool',
+    image: '/images/services/office-essentials.jpg',
     products: [
       'Writing instruments (pens, pencils, markers)',
       'Notebooks and notepads',
@@ -40,6 +42,7 @@ export const services: Service[] = [
     title: 'Print Solutions & Branding',
     description: 'Professional printing and branding materials for corporate identity',
     icon: 'Printer',
+    image: '/images/services/print-solutions.jpg',
     products: [
       'Business cards and stationery',
       'Marketing collateral',
@@ -63,6 +66,7 @@ export const services: Service[] = [
     title: 'IT Supplies & Accessories',
     description: 'Technology accessories and IT infrastructure supplies',
     icon: 'Monitor',
+    image: '/images/services/it-supplies.jpg',
     products: [
       'Computer peripherals',
       'Cables and connectors',
@@ -86,6 +90,7 @@ export const services: Service[] = [
     title: 'Electronic Accessories',
     description: 'Electronic components and accessories for modern workplaces',
     icon: 'Zap',
+    image: '/images/services/electronic-accessories.jpg',
     products: [
       'Charging solutions',
       'Battery packs',
@@ -109,6 +114,7 @@ export const services: Service[] = [
     title: 'Housekeeping & Hygiene',
     description: 'Essential supplies for maintaining clean and hygienic workspaces',
     icon: 'Sparkles',
+    image: '/images/services/housekeeping-hygiene.jpg',
     products: [
       'Cleaning chemicals',
       'Mops and brooms',
@@ -132,6 +138,7 @@ export const services: Service[] = [
     title: 'Healthcare & Hygiene Solutions',
     description: 'Specialized hygiene supplies for healthcare and wellness facilities',
     icon: 'HeartPulse',
+    image: '/images/services/healthcare-hygiene.jpg',
     products: [
       'Medical consumables',
       'First aid supplies',
@@ -155,6 +162,7 @@ export const services: Service[] = [
     title: 'Pantry & Hospitality Supplies',
     description: 'Pantry essentials and hospitality supplies for workplace comfort',
     icon: 'Coffee',
+    image: '/images/services/pantry-hospitality.jpg',
     products: [
       'Beverage supplies',
       'Snacks and refreshments',
@@ -178,6 +186,7 @@ export const services: Service[] = [
     title: 'Recreation & Employee Engagement',
     description: 'Supplies for employee recreation and engagement activities',
     icon: 'Gamepad2',
+    image: '/images/services/recreation-supplies.svg',
     products: [
       'Indoor games and sports equipment',
       'Team building materials',
@@ -200,6 +209,7 @@ export const services: Service[] = [
     title: 'Professional Cleaning Solutions',
     description: 'Industrial-grade cleaning solutions for commercial facilities',
     icon: 'SprayCan',
+    image: '/images/services/cleaning-solutions.jpg',
     products: [
       'Industrial cleaning chemicals',
       'Specialized cleaning equipment',
@@ -223,6 +233,7 @@ export const services: Service[] = [
     title: 'Packaging Materials',
     description: 'Comprehensive packaging solutions for business operations',
     icon: 'Package',
+    image: '/images/services/packaging-materials.jpg',
     products: [
       'Corrugated boxes',
       'Bubble wrap and cushioning',
@@ -246,6 +257,7 @@ export const services: Service[] = [
     title: 'Repair, Maintenance & Safety Supplies',
     description: 'Tools and safety equipment for facility maintenance',
     icon: 'Wrench',
+    image: '/images/services/maintenance-safety.jpg',
     products: [
       'Hand tools and equipment',
       'Safety gear and PPE',
@@ -269,6 +281,7 @@ export const services: Service[] = [
     title: 'Electrical & Sanitary Supplies',
     description: 'Electrical components and sanitary maintenance supplies',
     icon: 'Lightbulb',
+    image: '/images/services/electrical-sanitary.jpg',
     products: [
       'Electrical fittings',
       'Lighting solutions',

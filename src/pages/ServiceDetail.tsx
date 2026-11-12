@@ -57,6 +57,28 @@ export default function ServiceDetail() {
             </div>
 
             <div>
+              <div
+                style={{
+                  borderRadius: 'var(--radius-lg)',
+                  overflow: 'hidden',
+                  marginBottom: '1.5rem',
+                  border: '1px solid var(--color-border)',
+                  boxShadow: 'var(--shadow-sm)',
+                  aspectRatio: '16 / 9',
+                  backgroundColor: 'var(--color-bg-main)'
+                }}
+              >
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    display: 'block'
+                  }}
+                />
+              </div>
               <h3 style={{ marginBottom: '1rem' }}>Products in This Category</h3>
               <div className="card" style={{ padding: '1.5rem' }}>
                 <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
